@@ -19,9 +19,9 @@ $damageCalc = $damage/4.5
 - Set your damage thresholds.
 - You don't have to use all of them.
 - You can use 1-3, 1-5, or 1-7.
-- If you use 1-7 there will be an additional threshold automatically set to 1.0
-- If you use 1-5. $threshold5 must be 1.0
-- If you use 1-3. $threshold3 must be 1.0
+	- If you use 1-7 there will be an additional threshold automatically set to 1.0
+	- If you use 1-5. $threshold5 must be 1.0
+	- If you use 1-3. $threshold3 must be 1.0
 
 ~~~
 [Constants]
