@@ -128,3 +128,31 @@ if $damage >= 0.86666666
 	$\global\damageMeter\alpha = 1
 endif
 ~~~
+	
+##Optional Regen Effect
+
+ - Add these lines to your characters INI.
+	 
+	 
+~~~
+[Present]
+if $active == 1
+    run = CommandListRegen
+endif
+
+[TextureOverride"Character"Position]
+$\global\regenEffect\regenActive = 1
+
+[CommandListRegen]
+; triggers at tubby and over 80% health.
+if $\global\regenEffect\tubby == 1 && $health >= 0.8
+       $\global\regenEffect\regenEffect = 1
+	;Add lines to restore outfit
+   endif
+endif
+
+; triggers when you open the healing menu at a statue.
+if $\global\regenEffect\statueBlessing == 1
+;Add lines to restore outfit
+endif
+~~~
