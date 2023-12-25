@@ -3,11 +3,11 @@ Global DamageMeter for Armor Break Functionality.
 
 ### Prerequisites
 
-You must have a working damage detection setup in your INI file.
-You can use Silent's script.
+• You must have a working damage detection setup in your INI file.
+• You can use Silent's script.
 
-You need to normalize your damage value to be between 0 and 1.
-If your last stage is triggered at damage value 4.5 you would divide "$damage" by "4.5".
+• You need to normalize your damage value to be between 0 and 1.
+• If your last stage is triggered at damage value 4.5 you would divide "$damage" by "4.5".
 
 ~~~
 $damageCalc = $damage/4.5
