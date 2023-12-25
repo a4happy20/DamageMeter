@@ -1,10 +1,12 @@
 # DamageMeter
 Global DamageMeter for Armor Break Functionality.
 
+![DamageMeter](https://github.com/a4happy20/DamageMeter/assets/84645516/2e72c39c-87c0-4e38-9dac-37c00f6b4aa4)
 					
 ## Prerequisites
 
-				  
+				
+
 - You must have a working damage detection setup in your INI file.
 - You can use Silent's script or use the Example.ini as a reference.
 
