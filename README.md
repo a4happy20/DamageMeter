@@ -125,7 +125,8 @@ if $damage >= 0.86666666
 	$\global\damageMeter\alpha = 1
 endif
 ~~~
-	
+---
+  
 ## Optional Regen Effect
 
  - Add these lines to your characters INI.
