@@ -9,9 +9,9 @@ You can use Silent's script.
 You need to normalize your damage value to be between 0 and 1.
 If your last stage is triggered at damage value 4.5 you would divide "$damage" by "4.5".
 
-~
+~~~
 $damageCalc = $damage/4.5
-~
+~~~
 
 ## How to Use
 
@@ -23,7 +23,7 @@ If you use 1-7 there will be an additional threshold automatically set to 1.0
 If you use 1-5. $threshold5 must be 1.0
 If you use 1-3. $threshold3 must be 1.0
 
-~
+~~~
 [Constants]
 global $damageCalc = 0
 global $damageMeterActive = 0
@@ -40,37 +40,37 @@ global $threshold7 = 0.88888888
 if $active == 1
     run = CommandListDamageMeter
 endif
-~
+~~~
 
 Add this line to your character ini.
 
-~
+~~~
 [TextureOverride"Character"Position]
 $\global\damageMeter\damageMeterActive = 1
-~
+~~~
 
 Add this command to your "Commands" section in your character ini.
 Set "fiveLevels" and "sevenLevels" to appropriate values.
 
 # Three Stages
-~
+~~~
 $\global\damageMeter\fiveLevels = 0
 $\global\damageMeter\sevenLevels = 0
-~
+~~~
 
 # Five Stages
-~
+~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 0
-~
+~~~
 
 # Eight Stages
-~
+~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 1
-~
+~~~
 
-~
+~~~
 [CommandListDamageMeter]
 ;IniParams
 x95 = $damage
@@ -105,4 +105,4 @@ if $damage >= 0.86666666
 	$\global\damageMeter\delay = 0
 	$\global\damageMeter\alpha = 1
 endif
-~
+~~~
