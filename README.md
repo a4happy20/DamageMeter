@@ -59,7 +59,7 @@ $\global\damageMeter\damageMeterActive = 1
 ~~~
 
 			     
-- Add this command to your "Commands" section in your character ini.
+
 - Set "fiveLevels" and "sevenLevels" to appropriate values.
 
 			     
@@ -86,6 +86,9 @@ $\global\damageMeter\sevenLevels = 1
                                         
 
 ### Command:
+                      
+- Add this command to your "Commands" section in your character ini.
+            
 ~~~
 [CommandListDamageMeter]
 ;IniParams
