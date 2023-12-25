@@ -64,21 +64,21 @@ $\global\damageMeter\damageMeterActive = 1
 
 			     
 #### Three Stages:
-                                     
+---
 ~~~
 $\global\damageMeter\fiveLevels = 0
 $\global\damageMeter\sevenLevels = 0
 ~~~
                           
 #### Five Stages:
-                                   
+---                           
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 0
 ~~~
                     
 #### Eight Stages:
-                                   
+---                             
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 1
@@ -88,7 +88,7 @@ $\global\damageMeter\sevenLevels = 1
 ### Command:
                       
 - Add this command to your "Commands" section in your character ini.
-            
+---      
 ~~~
 [CommandListDamageMeter]
 ;IniParams
