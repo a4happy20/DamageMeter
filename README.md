@@ -29,7 +29,7 @@ $damageCalc = $damage/4.5
   - If you use 1-5. $threshold5 must be 1.0
   - If you use 1-3. $threshold3 must be 1.0
 
-					   
+					
 ~~~
 [Constants]
 global $damageCalc = 0
@@ -63,28 +63,29 @@ $\global\damageMeter\damageMeterActive = 1
 - Set "fiveLevels" and "sevenLevels" to appropriate values.
 
 			     
-### Three Stages
+#### Three Stages
                                         
 ~~~
 $\global\damageMeter\fiveLevels = 0
 $\global\damageMeter\sevenLevels = 0
 ~~~
                                 
-### Five Stages
+#### Five Stages
                                         
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 0
 ~~~
                           
-### Eight Stages
+#### Eight Stages
                                         
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 1
 ~~~
+                                        
 
-				   
+### Command
 ~~~
 [CommandListDamageMeter]
 ;IniParams
