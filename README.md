@@ -1,29 +1,29 @@
 <pre>
 # DamageMeter
 Global DamageMeter for Armor Break Functionality.
-
+$~$
 ![DamageMeterGIF](https://github.com/a4happy20/DamageMeter/assets/84645516/2d30b4f0-7dce-40f0-8c04-48fbef527724)
-
+$~~$
 					
 ## Prerequisites
-
+$~~~$
 				
 
 - You must have a working damage detection setup in your INI file.
 - You can use Silent's script or use the Example.ini as a reference.
-
+$~~~$
 				
 - You need to normalize your damage value to be between 0 and 1.
 - If your last stage is triggered at damage value 4.5 you would divide "$damage" by "4.5".
-
+$~~~$
 				      
 ~~~
 $damageCalc = $damage/4.5
 ~~~
-
+$~~~$
 				    
 ## How to Use
-
+$~~~$
 				   
 - Add these lines to your character ini.
 - Set your damage thresholds.
@@ -33,7 +33,7 @@ $damageCalc = $damage/4.5
   - If you use 1-5. $threshold5 must be 1.0
   - If you use 1-3. $threshold3 must be 1.0
 
-					
+$~~~$				
 ~~~
 [Constants]
 global $damageCalc = 0
@@ -46,48 +46,48 @@ global $threshold4 = 0.55555555
 global $threshold5 = 0.66666666
 global $threshold6 = 0.77777777
 global $threshold7 = 0.88888888
-
+$~~$
 [Present]
 if $active == 1
     run = CommandListDamageMeter
 endif
 ~~~
-
+$~~~$
 			     
 - Add this line to your character ini.
-
+$~~~$
 			   
 ~~~
 [TextureOverride"Character"Position]
 $\global\damageMeter\damageMeterActive = 1
 ~~~
-
+$~~~$
 			     
 
 - Set "fiveLevels" and "sevenLevels" to appropriate values.
 
-			     
+$~~~$			     
 #### Three Stages:
-                                        
+$~~~$                                      
 ~~~
 $\global\damageMeter\fiveLevels = 0
 $\global\damageMeter\sevenLevels = 0
 ~~~
-                                
+$~~~$                           
 #### Five Stages:
-                                        
+$~~~$                                   
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 0
 ~~~
-                          
+$~~~$                     
 #### Eight Stages:
-                                        
+$~~~$                                   
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 1
 ~~~
-                                        
+$~~~$                                   
 
 ### Command:
                       
