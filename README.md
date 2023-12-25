@@ -1,3 +1,4 @@
+<pre>
 # DamageMeter
 Global DamageMeter for Armor Break Functionality.
 
@@ -129,7 +130,7 @@ if $damage >= 0.86666666
 endif
 ~~~
 	
-##Optional Regen Effect
+## Optional Regen Effect
 
  - Add these lines to your characters INI.
 	 
@@ -156,3 +157,4 @@ if $\global\regenEffect\statueBlessing == 1
 ;Add lines to restore outfit
 endif
 ~~~
+</pre>
