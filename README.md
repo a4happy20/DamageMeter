@@ -1,12 +1,12 @@
-<pre>
+
 # DamageMeter
 Global DamageMeter for Armor Break Functionality.
 
 ![DamageMeterGIF](https://github.com/a4happy20/DamageMeter/assets/84645516/2d30b4f0-7dce-40f0-8c04-48fbef527724)
 
----					
+					
 ## Prerequisites
-***
+
 				
 
 - You must have a working damage detection setup in your INI file.
@@ -157,4 +157,3 @@ if $\global\regenEffect\statueBlessing == 1
 ;Add lines to restore outfit
 endif
 ~~~
-</pre>
