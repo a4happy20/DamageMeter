@@ -1,7 +1,8 @@
 # DamageMeter
 Global DamageMeter for Armor Break Functionality.
 
-![DamageMeter](https://github.com/a4happy20/DamageMeter/assets/84645516/2e72c39c-87c0-4e38-9dac-37c00f6b4aa4)
+![DamageMeterGIF](https://github.com/a4happy20/DamageMeter/assets/84645516/2d30b4f0-7dce-40f0-8c04-48fbef527724)
+
 					
 ## Prerequisites
 
