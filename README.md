@@ -6,7 +6,7 @@ Global DamageMeter for Armor Break Functionality.
 
 				  
 - You must have a working damage detection setup in your INI file.
-- You can use Silent's script.
+- You can use Silent's script or use the Example.ini as a reference.
 
 				
 - You need to normalize your damage value to be between 0 and 1.
