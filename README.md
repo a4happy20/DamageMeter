@@ -128,10 +128,12 @@ endif
 ---
   
 ## Optional Regen Effect
-
+  
+![DamageMeter_Regen](https://github.com/a4happy20/DamageMeter/assets/84645516/b41c4499-f91d-4bcf-82d9-ecb1e1f63c19)
+---
  - Add these lines to your characters INI.
-	 
-	 
+ - You can change effect type with "alt+H"
+---	 
 ~~~
 [Present]
 if $active == 1
@@ -154,3 +156,4 @@ if $\global\regenEffect\statueBlessing == 1
 ;Add lines to restore outfit
 endif
 ~~~
+---
