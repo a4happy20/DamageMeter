@@ -3,19 +3,17 @@
 Global DamageMeter for Armor Break Functionality.
 
 ![DamageMeterGIF](https://github.com/a4happy20/DamageMeter/assets/84645516/2d30b4f0-7dce-40f0-8c04-48fbef527724)
+---
 
-***					
 ## Prerequisites
-***
 				
 
 - You must have a working damage detection setup in your INI file.
 - You can use Silent's script or use the Example.ini as a reference.
----
-				
+  
+  
 - You need to normalize your damage value to be between 0 and 1.
 - If your last stage is triggered at damage value 4.5 you would divide "$damage" by "4.5".
----
 				      
 ~~~
 $damageCalc = $damage/4.5
@@ -23,7 +21,6 @@ $damageCalc = $damage/4.5
 ***
 				    
 ## How to Use
----
 				   
 - Add these lines to your character ini.
 - Set your damage thresholds.
@@ -55,7 +52,6 @@ endif
 ---
 			     
 - Add this line to your character ini.
----
 			   
 ~~~
 [TextureOverride"Character"Position]
