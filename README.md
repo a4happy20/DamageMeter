@@ -132,6 +132,7 @@ endif
 <details>
   <summary>Instructions</summary>
   <p>&nbsp;</p>
+	---
   <img src="https://github.com/a4happy20/DamageMeter/assets/84645516/b41c4499-f91d-4bcf-82d9-ecb1e1f63c19" alt="DamageMeter_Regen">
 
   ---
