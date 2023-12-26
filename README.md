@@ -131,33 +131,33 @@ endif
 ## Optional Regen Effect
 <details>
   <summary>Instructions</summary>
-  ![DamageMeter_Regen](https://github.com/a4happy20/DamageMeter/assets/84645516/b41c4499-f91d-4bcf-82d9-ecb1e1f63c19)
+  <img src="https://github.com/a4happy20/DamageMeter/assets/84645516/b41c4499-f91d-4bcf-82d9-ecb1e1f63c19" alt="DamageMeter_Regen">
 
----
- - Add these lines to your characters INI.
- - You can change effect type with "alt+H"
----	 
-~~~
-[Present]
-if $active == 1
-    run = CommandListRegen
-endif
+  ---
+   - Add these lines to your characters INI.
+   - You can change effect type with "alt+H"
+  ---	 
+  ~~~
+  [Present]
+  if $active == 1
+      run = CommandListRegen
+  endif
 
-[TextureOverride"Character"Position]
-$\global\regenEffect\regenActive = 1
+  [TextureOverride"Character"Position]
+  $\global\regenEffect\regenActive = 1
 
-[CommandListRegen]
-; triggers at tubby and over 80% health.
-if $\global\regenEffect\tubby == 1 && $health >= 0.8
-       $\global\regenEffect\regenEffect = 1
-	;Add lines to restore outfit
-   endif
-endif
+  [CommandListRegen]
+  ; triggers at tubby and over 80% health.
+  if $\global\regenEffect\tubby == 1 && $health >= 0.8
+         $\global\regenEffect\regenEffect = 1
+ 	 ;Add lines to restore outfit
+     endif
+  endif
 
-; triggers when you open the healing menu at a statue.
-if $\global\regenEffect\statueBlessing == 1
-;Add lines to restore outfit
-endif
-~~~
----
+  ; triggers when you open the healing menu at a statue.
+  if $\global\regenEffect\statueBlessing == 1
+  ;Add lines to restore outfit
+  endif
+  ~~~
+  ---
 </details>
