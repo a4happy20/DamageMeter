@@ -59,25 +59,26 @@ $\global\damageMeter\damageMeterActive = 1
 ~~~
 
 			     
-
+## Setting the Amount of Stages
+  
 - Set "fiveLevels" and "sevenLevels" to appropriate values.
 
 			     
-#### Three Stages:
+##### Three Stages:
 ---
 ~~~
 $\global\damageMeter\fiveLevels = 0
 $\global\damageMeter\sevenLevels = 0
 ~~~
                           
-#### Five Stages:
+##### Five Stages:
 ---                           
 ~~~
 $\global\damageMeter\fiveLevels = 1
 $\global\damageMeter\sevenLevels = 0
 ~~~
                     
-#### Eight Stages:
+##### Eight Stages:
 ---                             
 ~~~
 $\global\damageMeter\fiveLevels = 1
@@ -85,7 +86,7 @@ $\global\damageMeter\sevenLevels = 1
 ~~~
                                    
 
-### Command:
+## Command:
                       
 - Add this command to your "Commands" section in your character ini.
 ---      
