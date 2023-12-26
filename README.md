@@ -130,6 +130,7 @@ endif
   
 ## Optional Regen Effect
   
+<summary>Click to reveal spoiler
 ![DamageMeter_Regen](https://github.com/a4happy20/DamageMeter/assets/84645516/b41c4499-f91d-4bcf-82d9-ecb1e1f63c19)
 ---
  - Add these lines to your characters INI.
@@ -158,3 +159,4 @@ if $\global\regenEffect\statueBlessing == 1
 endif
 ~~~
 ---
+</summary>
