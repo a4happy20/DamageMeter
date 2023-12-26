@@ -130,7 +130,7 @@ endif
   
 ## Optional Regen Effect
 <details>
-  <summary>Instructions</summary>
+  <summary>Instructions:</summary>
   <p>&nbsp;</p>
 
   ---
