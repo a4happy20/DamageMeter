@@ -13,10 +13,10 @@ Global DamageMeter for Armor Break Functionality.
   
   
 - You need to normalize your damage value to be between 0 and 1.
-- If your last stage is triggered at damage value 4.5 you would divide "$damage" by "4.5".
+- If you want accumulative damage to be 400% of total hp for the final stage. You would divide "$damage" by "4.0".
 				      
 ~~~
-$damageCalc = $damage/4.5
+$damageCalc = $damage/4.0
 ~~~
 ***
 				    
@@ -124,6 +124,7 @@ endif
 if $damage >= 0.86666666
 	$\global\damageMeter\delay = 0
 	$\global\damageMeter\alpha = 1
+	$\global\damageMeter\damageMeter = 1
 endif
 ~~~
 ---
@@ -140,6 +141,7 @@ endif
   ---
    - Add these lines to your characters INI.
    - You can change effect type with "alt+H"
+   - You can set fps with "alt+U" (speed up/slow down the regen effect)
   ---	 
   ~~~
   [Present]
