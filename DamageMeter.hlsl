@@ -241,5 +241,3 @@ void main(vs2ps input, out float4 result : SV_Target0)
     }
 }
 #endif
-
-
