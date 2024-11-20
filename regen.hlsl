@@ -75,9 +75,44 @@ void main(vs2ps input, out float4 result : SV_Target0)
 
     if (NOTIFICATION_TYPE != 0) {
 
+// purple
+//        float4 color1 = float4(0.4941, 0.3921, 0.7725, 1.0);
+//        float4 color2 = float4(0.6, 0.4901, 0.8862, 1.0);
+//        float4 color3 = float4(0.4588, 0.3725, 0.6862, 1.0);
+
+// green
         float4 color1 = float4(0.5882, 0.8431, 0.1333, 1.0);
         float4 color2 = float4(0.8, 0.843, 0.133, 1.0);
         float4 color3 = float4(0.5882, 0.8431, 0.1333, 1.0);
+
+        float width = 10.0;
+        float height = 5.0;
+
+        if (EFFECTTYPE == 1) {
+            color1 = float4(0.5882, 0.0431, 0.1333, 1.0);
+            color2 = float4(0.8, 0.143, 0.133, 1.0);
+            color3 = float4(0.5882, 0.0431, 0.1333, 1.0);
+        }
+
+        else if (EFFECTTYPE == 2) {
+            color1 = float4(0.4941, 0.3921, 0.7725, 1.0);
+            color2 = float4(0.6, 0.4901, 0.8862, 1.0);
+            color3 = float4(0.4588, 0.3725, 0.6862, 1.0);
+            width = 7.0;
+            height = 3.5;
+        }
+
+        else if (EFFECTTYPE == 3) {
+            color1 = float4(0.4941, 0.3921, 0.7725, 1.0);
+            color2 = float4(0.6, 0.4901, 0.8862, 1.0);
+            color3 = float4(0.4588, 0.3725, 0.6862, 1.0);
+            width = 8.5;
+            height = 1.1;
+        }
+
+        else {
+
+        }
 
         float animationSpeed1 = 0.022;
         float animationSpeed2 = 0.0418;
@@ -95,51 +130,51 @@ void main(vs2ps input, out float4 result : SV_Target0)
         float alphaMultiplier6 = 0.55 + 0.55 * sin(CURRENTTIME * animationSpeed6);
 
 
-        float2 scaledUV1 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset1;
+        float2 scaledUV1 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset1;
 
-        float2 scaledUV2 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset2;
+        float2 scaledUV2 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset2;
 
-        float2 scaledUV3 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset3;
+        float2 scaledUV3 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset3;
 
-        float2 scaledUV4 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset4;
+        float2 scaledUV4 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset4;
 
-        float2 scaledUV5 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset5;
+        float2 scaledUV5 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset5;
 
-        float2 scaledUV6 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset6;
+        float2 scaledUV6 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset6;
 
 
 
-        float2 scaledUV7 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset7;
+        float2 scaledUV7 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset7;
 
-        float2 scaledUV8 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset8;
+        float2 scaledUV8 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset8;
 
-        float2 scaledUV9 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset9;
+        float2 scaledUV9 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset9;
 
-        float2 scaledUV10 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset10;
+        float2 scaledUV10 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset10;
 
-        float2 scaledUV11 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset11;
+        float2 scaledUV11 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset11;
 
-        float2 scaledUV12 = float2(input.uv.x * SCALE_WIDTH, (1.0 - input.uv.y) * SCALE_HEIGHT)
-                         + float2((1 - SCALE_WIDTH) * 0.5, (1 - SCALE_HEIGHT) * 0.5) + offset12;
+        float2 scaledUV12 = float2(input.uv.x * width, (1.0 - input.uv.y) * height)
+                         + float2((1 - width) * 0.5, (1 - height) * 0.5) + offset12;
 
 
 
         // Offset the UV coordinates to create a sliding effect
         float timeOffset = CURRENTTIME * 0.01;  // Adjust the speed of the sliding effect
-        float normalizedOffset = frac(timeOffset * (1.0 / SCALE_HEIGHT));
+        float normalizedOffset = frac(timeOffset * (1.0 / height));
 
-        if (EFFECTTYPE == 1) {
+        if (EFFECTTYPE == 4) {
             // fullscreen effect
             scaledUV1.y += timeOffset;
             scaledUV2.y += timeOffset;
